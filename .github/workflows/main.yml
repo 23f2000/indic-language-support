@@ -20,7 +20,7 @@
 ### Usage:
 
 1. *Import the Library:*
-   - Import the relevant modules from the Indic NLP Library into your Python script or application:
+   - *Import the relevant modules from the Indic NLP Library into your Python script or application*:
      python
      from indicnlp.tokenize import indic_tokenize
      from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
