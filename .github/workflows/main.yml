@@ -1,0 +1,152 @@
+ "Indic NLP Library" :
+
+### Installation:
+1.*clone the repository:*
+
+
+ git clone https://github.com/your-username/indic-nlp-library.git
+   
+
+2. *Install Dependencies:*
+   - Ensure you have Python installed on your system.
+   - Install necessary dependencies using pip:
+     
+     pip install -r requirements.txt
+     
+
+3. *Download Language Resources :*
+   - Some features may require specific language resources. Follow the instructions provided in the repository's README to download and configure these resources.
+
+### Usage:
+
+1. *Import the Library:*
+   - Import the relevant modules from the Indic NLP Library into your Python script or application:
+     python
+     from indicnlp.tokenize import indic_tokenize
+     from indicnlp.transliterate.unicode_transliterate import UnicodeIndicTransliterator
+     # Import other modules as needed
+     
+
+2. *Tokenization:*
+   - Tokenize text using the indic_tokenize module:
+     python
+     text = "भारत एक बहुत ही समृद्ध देश है।"
+     tokens = indic_tokenize.trivial_tokenize(text)
+     print(tokens)
+     
+
+3. *Stemming (if available):*
+   - Use stemming functions to extract the root form of words (if provided):
+     python
+     from indicnlp.morph import stemmer
+     stemmer = stemmer.IndianStemmer()
+     stemmed_word = stemmer.stem(word)
+     
+
+4. *Part-of-Speech Tagging (if available):*
+   - Utilize part-of-speech tagging functions to annotate words with their corresponding parts of speech (if provided):
+     python
+     from indicnlp.tag import tnt_pos_tagger
+     pos_tagger = tnt_pos_tagger.TnT()
+     tagged_text = pos_tagger.tag(text)
+     
+
+5. *Transliteration (if available):*
+   - Transliterate text between Indic languages and English (if provided):
+     python
+     text = "कृपया ध्यान दें"
+     transliterated_text = UnicodeIndicTransliterator.transliterate(text, "hi", "en")
+     print(transliterated_text)
+     
+
+
+ "Indic Transliteration":
+
+### Installation:
+
+1. *Clone the Repository:*
+   
+   git clone https://github.com/your_username/Indic-Transliteration.git
+   
+
+2. *Navigate to the Repository Directory:*
+   
+   cd Indic-Transliteration
+   
+
+3. *Install Dependencies:*
+   
+   pip install -r requirements.txt
+   
+
+### Usage:
+
+1. *Import the Transliteration Module:*
+   python
+   from indic_transliteration import sanscript
+   
+
+2. *Select Transliteration Scheme:*
+   python
+   scheme = sanscript.ITRANS  # Choose the transliteration scheme
+   
+
+3. *Transliterate Text:*
+   python
+   transliterated_text = sanscript.transliterate(text, scheme)
+   
+
+   Replace text with the input text you want to transliterate.
+
+4. *Example:*
+   python
+   text = "नमस्ते"
+   transliterated_text = sanscript.transliterate(text, sanscript.ITRANS)
+   print(transliterated_text)  # Output: "namaste"
+   
+"Indic NLP Resources":
+
+### Installation:
+
+1. *Clone the Repository:*
+   
+   git clone https://github.com/your_username/Indic-NLP-Resources.git
+   
+
+2. *Navigate to the Repository Directory:*
+   
+   cd Indic-NLP-Resources
+   
+
+### Usage:
+
+1. *Accessing Pre-Trained Models:*
+   - Navigate to the models directory to access pre-trained models for various NLP tasks.
+   
+   cd models
+   
+
+2. *Using Corpora:*
+   - Explore the corpora directory to access datasets and corpora for Indic languages.
+   
+   cd corpora
+   
+
+3. *Evaluation Scripts:*
+   - Check the evaluation_scripts directory for scripts used to evaluate NLP models and tools.
+   
+   cd evaluation_scripts
+   
+
+4. *Incorporating Pre-Trained Models:*
+   - Import the relevant pre-trained models into your NLP projects.
+   - Ensure proper attribution and compliance with licensing terms for any models used.
+
+5. *Utilizing Datasets and Corpora:*
+   - Use the provided datasets and corpora for training and evaluating NLP models and algorithms specific to Indic languages.
+   - Follow appropriate citation guidelines if using these datasets in research or projects.
+
+6. *Running Evaluation Scripts:*
+   - Execute evaluation scripts to assess the performance of NLP models on Indic language data.
+   - Customize evaluation parameters as per your requirements.
+
