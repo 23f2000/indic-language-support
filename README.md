@@ -1,4 +1,4 @@
-# indic-language-support
+# indic languages upport
 Indic NLP library: A repository focusing on natural language processing for Indic languages, including text input, processing, and output. It might cover aspects like tokenization, stemming, and part-of-speech tagging for various Indic languages.
 
 Repository: INDIC NLP LIBRARY
